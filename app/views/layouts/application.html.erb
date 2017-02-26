@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kaibunttar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class ="container-fluid">
+   <section class = "row">
+    <%= link_to "Kaibunttar", blogs_path, class: "col-md-3 header1" %>
+    <%= link_to "新規投稿", new_blog_path, class: "col-md-3 col-md-offset-6 header2" %>
+   </section>
+  </header>
+  
+<%= yield %>
+
+</body>
+</html>
